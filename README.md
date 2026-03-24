@@ -1,4 +1,4 @@
-# pheno-linkml-model 🧬
+# pheno-linkml-model (Sandbox)
 
 This repository is a technical demonstration of using **LinkML** to create a standardized, machine-readable data model for disease-phenotype associations.
 
