@@ -1,0 +1,26 @@
+id: https://w3id.org/my-github/disease-model
+name: disease-phenotype-model
+prefixes:
+  linkml: https://w3id.org/linkml/
+  mondo: http://purl.obolibrary.org/obo/MONDO_
+  hpo: http://purl.obolibrary.org/obo/HP_
+
+imports:
+  - linkml:types
+
+default_range: string
+
+classes:
+  Disease:
+    description: "表示一種疾病實體"
+    attributes:
+      id:
+        identifier: true
+        description: "疾病的唯一識別碼 (例如 MONDO ID)"
+      name:
+        required: true
+        description: "疾病名稱"
+      symptoms:
+        multivalued: true
+        range: string
+        description: "該疾病對應的表型 ID (HPO ID)"
